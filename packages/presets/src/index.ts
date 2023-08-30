@@ -1,8 +1,13 @@
 import { definePreset } from '@pandacss/dev';
+import { colors } from './theme/tokens/colors';
 
 const preset = definePreset({
   theme: {
-    extend: {},
+    extend: {
+      tokens: {
+        colors,
+      },
+    },
   },
 });
 
