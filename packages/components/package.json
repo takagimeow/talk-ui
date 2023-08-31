@@ -1,0 +1,52 @@
+{
+  "name": "@talk-ui/components",
+  "version": "0.1.0",
+  "description": "Talk UI Components for Radix UI components",
+  "keywords": [
+    "Radix UI",
+    "Panda CSS",
+    "Presets"
+  ],
+  "author": "takagimeow <mit@takagi.app> (https://takagimeow.app/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/takagimeow/talk-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/takagimeow/talk-ui/issues"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepare": "panda codegen",
+    "panda:watch": "panda --watch"
+  },
+  "dependencies": {
+    "@pandacss/dev": "0.13.0"
+  },
+  "devDependencies": {
+    "@pandacss/types": "0.13.0",
+    "tsup": "7.2.0",
+    "@talk-ui/presets": "workspace:*"
+  },
+  "tsup": {
+    "entry": [
+      "./index.ts"
+    ],
+    "clean": true,
+    "dts": true,
+    "sourcemap": true,
+    "format": [
+      "esm",
+      "cjs"
+    ]
+  },
+  "main": "./index.ts"
+}
