@@ -13,6 +13,8 @@ const config = {
   stories: [
     "../packages/ui/**/*.mdx",
     "../packages/ui/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../packages/components/**/*.mdx",
+    "../packages/components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
   addons: [
     getAbsolutePath("@storybook/addon-links"),
