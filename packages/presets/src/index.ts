@@ -1,5 +1,6 @@
 import { definePreset } from '@pandacss/dev';
 import { colors } from './theme/tokens/colors';
+import { recipes } from './theme/recipes';
 
 const preset = definePreset({
   theme: {
@@ -7,6 +8,7 @@ const preset = definePreset({
       tokens: {
         colors,
       },
+      recipes,
     },
   },
 });
